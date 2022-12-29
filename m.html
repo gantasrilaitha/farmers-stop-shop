@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>bootstrap</title>
+<script src="C:\Users\DELL\Desktop\WEB TECH FILES\unit 2\jquery-3.6.1.min.js">
+</script>
+<style>
+	//body{background-color:green;}
+	h1{background-color:yellow;text-decoration:underline;color:red;}
+	.mrp{align:center; color:red;background-color:yellow}
+	.image1{margin-left:auto;margin-right:auto;display:block;width:15%;}
+</style>
+<script crossdomain src="https://unpkg.com/react@16/umd/react.development.js"> </script> 
+		<script crossdomain src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"> </script> 
+		<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"> </script>
+</script>
+</head>
+<body>
+<h1 align="center" color="blue">farmer store</h1>
+<p align="center"><audio  src="C:\Users\DELL\Desktop\WEB TECH FILES\project\16658538074610qzq6vdw-voicemaker.in-speech.mp3" controls>
+	</audio></p>
+<table align="center" border=5 cellpadding=5 cellspacing=3>
+<tr><th>item</th><th></th><th>qty</th><th>total</th><th>add</th></tr>
+<tr id="r1">
+	<th><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFSEIUU_B_l0KGcNA0n-xAStv3gM70crChEUl1MtYrUECff2C61JyFqD5bZDE5DA-ptrU&usqp=CAU" >
+	<br>Sona Wheat</th>
+	<th><div class="mrp">45rupees/kg</div>
+	<div>click to know more<a href="https://youtu.be/kuIQLRtJTa8">SW</div>
+	<div><image class="image1" src="C:\Users\DELL\Desktop\WEB TECH FILES\project\five-stars-customer-product-rating-review-flat-vector-26675950.jpg"></div>
+	</th>
+	<th id="q1">enter qty<input type="text" id="at" value=0 />
+		<script>
+		var atn=document.getElementById("at");
+		function sayHello() {var t=parseInt(prompt("enter qty"));
+		document.getElementById("at").value=t;
+    		document.getElementById("t1").innerHTML=t*45;
+		}
+	atn.addEventListener("click", sayHello);
+	</script>
+
+	<div id="root"></div>
+	<script type='text/babel'>
+	class My_component extends React.Component{
+		constructor(props){
+		 super(props); 
+		this.state = {val:0,to:0} }
+		render()
+		{ //alert("in render");
+		return (<div>
+			<button onClick = {this.decrement}>-</button>
+			<input id="i1" type = "text" value = {this.state.val}/>
+			<button onClick = {this.increment}>+</button>
+			<p></p>
+			<button id="b" onClick = {this.total}>to</button>
+			<input id="i2" type = "text" value = {this.state.to}/>
+			</div>
+			)
+		}
+	increment=()=>
+	{ this.setState({val: this.state.val+1} ) }
+	decrement=()=>
+	{ this.setState({val: this.state.val-1}) }
+	total=()=>{this.setState({to: this.state.val*45})}
+	
+ 	}
+	ReactDOM.render(<My_component/>,document.getElementById("root"))
+	</script>
+	</th>
+
+	<th id="t1"></th>
+	<th id="t2">
+	<button id="b" >add to cart</button>
+		<script>
+		var btn=document.getElementById("b");
+		var r1=document.getElementById("r1");
+		function sayHello() { 
+    			r1.style.background="lightblue";
+		}
+	btn.addEventListener("click", sayHello);
+	</script>
+	</th>
+</tr>
+
+</table>
+</body>
+</html>

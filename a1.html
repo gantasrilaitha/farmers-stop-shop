@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Farmer's Stop & Shop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+
+<link rel="icon" href="logo.jfif" type="image/x-icon">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+p{
+    font-size:20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+</style>
+</head>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Categories</a>
+  <a href="#programs" onclick="w3_close()" class="w3-bar-item w3-button">Programs</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About us</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    
+    <div class="w3-center w3-padding-16"><h1 style="color:green;font-size:50px;"><b>Farmer's Stop&Shop</b></h1></div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img  src="farmm.jpg" alt="FV" class="image">
+      <h3>Farm Market</h3>
+        </div>
+    <div class="w3-quarter">
+      <img src="info.jpg" alt="beverages" class="image">
+      <h3>Info</h3>
+    </div>
+    <div class="w3-quarter">
+      <img src="bank.png" alt="bank" class="image">
+      <h3>Banking</h3>
+    </div>
+    <div class="w3-quarter">
+      <img src="fert.jpg" alt="fert" class="image">
+      <h3>Fertilizer Shop</h3>
+    </div>
+  </div>
+  
+
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="programs">
+  <hr style="color:green;background-color:olive;height:3px"><br>
+
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h2 style="color:green;font-size:40px;"><i>Our Programs...</i></h2><br>
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img  src="prog1.jpg" alt="p1" style="width:100%" >
+      <h3>Organic Farming</h3>
+        </div>
+    <div class="w3-quarter">
+      <img src="prog2.jpg" alt="p2" style="width:100%">
+      <h3>Natural Resource Management</h3>
+    </div>
+    <div class="w3-quarter">
+      <img src="prog3.jpg" alt="p3" style="width:100%">
+      <h3>Village Institutions</h3>
+    </div>
+    <div class="w3-quarter">
+      <img src="prog4.jpg" alt="p4" style="width:100%">
+      <h3>Organic Manure Production</h3>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  <hr id="about">
+  <hr style="color:green;background-color:olive;height:3px">
+
+
+  <!-- about Section -->
+  <section id="backimg">
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h2 style="color:green;font-size:40px;"><i>About us</i></h2><br>
+
+    <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+        
+        
+          
+          <h3> Agriculture is the backbone of the Indian Economy yet Indian farmers make less than international averages. We at <u style="color:green">Farmer's Stop&Shop</u> are dedicated towards helping our Farmers in the best way 
+            possible. This Farmer's Portal is an endeavour in this direction to create one stop shop for meeting all informational
+             needs relating to Agriculture.Once in the Farmers’ Portal, a farmer will be able to get
+            all relevant information on specific subjects around his village/block /district or state</h3>
+       
+      </div>
+    
+  </div>
+</section>
+  <hr style="color:green;background-color:olive;height:3px">
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      
+      <p style="color:green">Our Address.. </p><p>Lexington Towers,<br> 3rd Floor TATA Tech Office,<br>Tavarekere Main Rd, S.G. Palya,<br> Bengaluru, Karnataka<br> 560029</p>
+      <h3>Find us at...</h3>
+      <a href="https://www.google.com/maps/dir/12.9302528,77.529088/farmers+ngo+india+near+me/@12.9315135,77.5289703,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3bae3e30cf3768d1:0x26d2011fa1a99cae!2m2!1d77.5463674!2d12.9282029"><u style="color:blue">Farmer's Stop&Shop</u></a>
+    </div>
+  
+    <div class="w3-third">
+      
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <span class="w3-large">Commercial Orders</span><br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-large">FAQs</span><br>
+        </li>
+        <li class="w3-padding-16">
+            <span class="w3-large"></span><br>
+          </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <p style="color:green">Get involved with us...</p><p>You can volunteer at any of our upcoming events or organize your own
+         fundraiser. We also welcome writers and photographers interested in making field visits and reporting on our projects. </p>
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
