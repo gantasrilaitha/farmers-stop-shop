@@ -31,3 +31,5 @@ To start the frontend and backend servers, use the following commands:
     cd server
     npm start
     ```
+## **Have a look**
+[New Tab (1).webm](https://github.com/user-attachments/assets/a34155cc-8aee-4c73-a713-14c0e5792f49)
